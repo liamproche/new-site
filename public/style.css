@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: 'Young Serif', serif;
+    height: 75vh;
+}
+header{
+    background: white;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* FONT SIZING */
+h1{
+    font-size: 5.4rem;
+}
+h2{
+    font-size: 2.8rem;
+    margin-right: 18%;
+}
+h3{
+    font-size: 1.8rem;
+
+}
+/* END FONT SIZING */
+
+/* SIDE NAV */
+.side-nav{
+    background: rgba(255, 255, 255, .8);
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -webkit-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
+    -moz-transition: all .2s cubic-bezier(0, 0.57, 0.74, 1.06);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    z-index: 1;
+}
+nav{
+    opacity: 1;
+}
+.show-nav{
+    right: 0;
+}
+.nav-appear nav{
+    opacity: 1;
+    transition: all 5s;
+}
+.menu-image{
+    height: 38px;
+    float: right;
+}
+.x{
+    height: 38px;
+    align-self: flex-end;
+}
+li{
+    list-style: none;
+    margin-top: 20%;
+}
+a{
+    display: block;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.nav-content{
+    width: 100%;
+    text-align: center;
+}
+/* END SIDE NAV */
+
+
+@media only screen and (min-width: 490px){
+    /* NAV */
+    .side-nav{
+        right: 0;
+        height: 15vh;
+        height: 10vh; 
+        width: 100%;
+        position: static;
+        border: none;
+    }
+    li{
+        margin-left: 5%
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    .nav-content{
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+    }
+    .menu-image{
+        display: none;
+    }
+    .x{
+        display: none;
+    }
+    /* END SIDENAV MEDIA QUERIES */
+}
