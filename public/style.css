@@ -4,7 +4,7 @@
 }
 body{
     font-size: 18px;
-    font-family: 'Young Serif', serif;
+    font-family: 'Montserrat', sans-serif;
     height: 75vh;
 }
 header{
@@ -84,19 +84,45 @@ a{
 }
 /* END SIDE NAV */
 
+.hero{
+    background-image: url("./images/hero-background.png");
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    text-align: center;
+}
+.hero h1{
+    padding-top: 15%;
+    padding: 0 auto;
+}
+.button-div{
+    margin-top: 5%;
+    border: 2px solid red;
+}
+.about-button{
+    margin-left: 5%;
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+}
+#demos-button{
+    margin-right: 5%;
+}
 
 @media only screen and (min-width: 490px){
     /* NAV */
     .side-nav{
         right: 0;
-        height: 15vh;
         height: 10vh; 
-        width: 100%;
+        width: 50%;
         position: static;
         border: none;
     }
+    .nav-content{
+        padding-right: 75%
+    }
     li{
-        margin-left: 5%
+        margin-right: 10%
     }
     a{
         font-size: 1.5rem;
