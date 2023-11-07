@@ -195,10 +195,6 @@ a{
 .paragraph-div{
     text-align: center;
 }
-footer{
-    text-align: center;
-    border: 2px solid blue;
-}
 #headshot{
     height: 45vh;
     margin-top: 5vh;
@@ -211,7 +207,6 @@ footer{
     margin-bottom: 7vh;
     margin-left: 3vh;
 }
-
 #contact-form{
     margin-left: 12vw;
     margin-right: 5vw;
@@ -219,6 +214,24 @@ footer{
 }
 #submit-button{
     padding: 3px;
+}
+.footer{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social-div{
+    display: flex;
+}
+#footer-facebook-logo{
+    width: 40px;
+}
+#footer-youtube-logo{
+    width: 40px;
+}
+#footer-github-logo{
+    width: 40px;
 }
 @media only screen and (min-width: 490px){
     /* NAV */
