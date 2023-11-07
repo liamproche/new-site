@@ -127,7 +127,6 @@ a{
     text-align: center;
 }
 .services{
-    border: 2px solid black; 
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -148,7 +147,6 @@ a{
 }
 .detail-2{
     display: flex;
-    padding-left: 3%;
     background-color: #e8e8e8;
 }
 .text-div{
@@ -157,7 +155,7 @@ a{
 .text-div-2{
     text-align: right;
     width: 100%;
-    margin-left: 30%;
+    /* margin-left: 0.%; */
     margin-right: 3%;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -171,6 +169,9 @@ a{
     margin-bottom: 2%;
     width: 66%;
 }
+/* .section-b-image-wrapper{
+    border: 2px solid green
+} */
 #facebook{
     width: 80px;
     align-self: center;
@@ -190,8 +191,28 @@ a{
 }
 footer{
     text-align: center;
-    background-color: #c9c9c9;
-    border: none;
+    border: 2px solid blue;
+}
+#headshot{
+    height: 45vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 5vh;
+}
+#business{
+    height: 40vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    margin-left: 3vh;
+}
+
+#contact-form{
+    margin-left: 12vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+}
+#submit-button{
+    padding: 3px;
 }
 @media only screen and (min-width: 490px){
     /* NAV */
